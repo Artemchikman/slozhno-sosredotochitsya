@@ -9,4 +9,72 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-attachment: fixed;
+  background-image: url(/images/cover-image-light.png);
+  --bg-color: #ff8dcb; /*цвет бакграунда*/
+  --text-shadow: #ff0070;
+  --font-family-main: "IBM Plex Mono" sans-serif;
+  --text-color: #000028;
+  --text-color_pink: #353430; /*цвет заголовков слева*/
+  --section-title-color: #ffc2e6; /*Цвет заголовка Focus*/
+  --title-decor-bg-color: #ff0070; /*задний фон текста*/
+  --title-decor-color: #353430;
+  --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --color-link: #f1b2ce; /*цвет ссылки в тексте*/
+  --accent-color: #ff0070;
+}
+@media (prefers-color-scheme: Light) {
+  .page.theme_auto {
+    --bg-color: #ff8dcb; /*цвет бакграунда*/
+    --text-shadow: #ff0070;
+    --font-family-main: "IBM Plex Mono" sans-serif;
+    --text-color: #000028;
+    --text-color_pink: #353430; /*цвет заголовков слева*/
+    --section-title-color: #ffc2e6; /*Цвет заголовка Focus*/
+    --title-decor-bg-color: #ff0070; /*задний фон текста*/
+    --title-decor-color: #353430;
+    --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --color-link: #353430; /*цвет ссылки в тексте*/
+    --accent-color: #ff8dcb;
+  }
+  .page.theme_light .rec,
+  .page.theme_auto .rec {
+    display: none;
+  }
+
+ /* .decorated-zone::after {
+    content: "";
+    position: absolute;
+    block-size: 25px;
+    inline-size: 25px;
+    right: 0px;
+    border-block-start: 1px solid var(--text-color_pink);
+    border-inline-end: 1px solid var(--text-color_pink);
+  }
+
+  .decorated-zone::before {
+    content: "";
+    position: absolute;
+    block-size: 25px;
+    inline-size: 25px;
+    right: 22px;
+    border-block-end: 1px solid var(--text-color_pink);
+    border-inline-start: 1px solid var(--text-color_pink);
+    bottom:40px;
+    left: 0px;
+  }
+*/
+  .page.theme_light .link {
+    color: var(--text-color_pink);
+    text-decoration: none;
+    outline: none;
+  }
+
+  .page.theme_light .link:hover {
+    text-shadow: 2px 2px 2px var(--text-shadow);
+    text-decoration: underline var(--title-decor-color);
+  }
+  .page.theme_light .link:focus {
+    border: 1px solid var(--text-color_pink);
+  }
 }
