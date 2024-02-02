@@ -324,6 +324,7 @@
     margin-top: 10px;
   }
 }
+
 @media (width < 668px) {
   .header__theme-menu-list {
     flex-direction: column;
@@ -364,9 +365,7 @@
   }
 
   .content-section-title_dofamine {
-    margin-top: -10px; /*Этот стиль нужно удалить,
-     в данном случае нужно изменять сетку,
-      чтобы элемент не выходил за пределы своего контейнера*/
+    margin-top: -10px; 
   }
 }
 
