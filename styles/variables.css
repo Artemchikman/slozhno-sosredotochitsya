@@ -4,6 +4,7 @@
 */
 
 :root {
+  --background-image: url('../images/cover-image-dark.png');
   --bg-color: #FF0070; /*цвет бакграунда*/
   --text-shadow: #FF0070;
   --font-family-main:"IBM Plex Mono", sans-serif;
@@ -15,4 +16,5 @@
   --focus-font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --color-link:#F1B2CE; /*цвет ссылки в тексте*/
   --accent-color:#FF8DCB;
+  --color-hover-dark:#353430;
   }

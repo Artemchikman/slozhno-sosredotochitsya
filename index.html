@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
@@ -46,7 +46,7 @@
           </li>
         </ul>
       </nav>
-      <h2 class="header content-section-title__focus">no focus</h2>
+      <h1 class="content-section-title__focus">no focus</h1>
       <p class="paragraph-title title-decor">
         Что делать, когда не можешь делать ничего <br />
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
@@ -54,12 +54,12 @@
     </header>
     <main>
       <section class="content-section concentrate_grid-container">
-        <h2 class="section__title section__title-concentrate">
+        <h2 class="section__title section_title-two">
           Почему сосредоточиться так сложно
         </h2>
         <article class="mnogozadach">
           <h3 class="content-section-title title-decor">Многозадачность</h3>
-          <p>
+          <p class="text">
             Особенно сложно сосредоточиться, когда задач много и все они —
             важные. Где же легендарная многозадачность, когда она так нужна вам
             (и всем нанимающим менеджерам этого мира)? А дело в том, что её
@@ -77,7 +77,7 @@
           >
             Дофамин
           </h3>
-          <p>
+          <p class="text">
             С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
             невозможности сосредоточиться замешана и полная противоположность
             стрессу — дофамин. Это вещество участвует в системе вознаграждения
@@ -90,7 +90,7 @@
         </article>
       </section>
       <section class="content-section concentration_grid-container">
-        <h2 class="section__title section__title-concentration">
+        <h2 class="section__title section_title-three">
           Что снижает концентрацию внимания?
         </h2>
         <article class="concentration__title">
@@ -99,7 +99,7 @@
           >
             Многозадачность
           </h3>
-          <p>
+          <p class="text">
             Как концентрация может снижаться из-за… концентрации? Любая
             стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
             мозг постоянно «сканировать» окружающую среду на предмет опасности.
@@ -114,7 +114,7 @@
           >
             Еда
           </h3>
-          <p>
+          <p class="text">
             «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
             доставляют в мозг энергию и помогают ему лучше работать. Но уходит
             эта энергия также быстро, как и приходит. А мы в результате попадаем
@@ -129,7 +129,7 @@
           >
             Гаджеты
           </h3>
-          <p>
+          <p class="text">
             Да-да, это та самая ситуация, когда на экране ноутбука — код, в
             наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными
             утятами. В результате мозг пытается переключиться с одной задачи на
@@ -141,7 +141,10 @@
         </article>
       </section>
       <section class="content-section advice_grid-container">
-        <h2 class="section__title advice-section_title">
+        <h2 class="section__title section_title-four">
+          <!--Исправил так как мог, по простому назвал
+        первый класс у этих элементов одинаковый, а также стилизация к ним. Присвоил второй класс,
+      для того чтобы можно было в сетке расположить элементы.Спасибо за понимание, если не так, не могли бы вы пример привести-->
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
@@ -153,7 +156,7 @@
             <h4 class="paragraph title-decor title_decor-advice">
               Представьте небо и облака
             </h4>
-            <p>
+            <p class="text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
               как раз и мешают эти сложные задачи делать. В такие моменты можно
@@ -168,7 +171,7 @@
             <h4 class="paragraph title-decor title-music-on">
               Включите музыку
             </h4>
-            <p>
+            <p class="text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
               Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
@@ -177,7 +180,7 @@
           </article>
           <article>
             <h4 class="paragraph title-decor title-walk">Прогуляйтесь</h4>
-            <p>
+            <p class="text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a class="link" target="_blank" href="#"> показал</a>, что
               созерцание природы повышает концентрацию, в то время как после
@@ -191,7 +194,7 @@
             <h4 class="paragraph title-decor title-food_eating">
               Хорошо ешьте
             </h4>
-            <p>
+            <p class="text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
               высоким содержанием клетчатки: овощи, ягоды, бобовые (нут,
@@ -200,7 +203,7 @@
           </article>
           <article>
             <h4 class="paragraph title-decor title-read">Читайте</h4>
-            <p>
+            <p class="text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
               даже секунд. А вот интересная книга способна затянуть и на
@@ -210,9 +213,9 @@
         </div>
       </section>
       <section class="content-section cards">
-        <h3 class="content-section-title maybe_in_the_pictures title-decor">
+        <h2 class="section__title section_title-five title-decor">
           А можно в картинках?
-        </h3>
+        </h2>
         <ul class="card__list-grid">
           <li class="card__list-item">
             <img src="./images/sunset.png" alt="Рассвет" />
