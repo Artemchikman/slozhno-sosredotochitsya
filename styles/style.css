@@ -272,11 +272,6 @@
   font-style: normal;
   line-height: 23.4px; /* 130% */
 }
-/* @media (width < 668px) {
-.section__title {
-  margin-bottom: 20px;
-} */
-
 
 .link {
   color: var(--title-decor-color);
@@ -311,7 +306,7 @@
   }
 }
 .mnogozadach {
-  grid-area: 1/2/2/3; /*Убрать*/
+  grid-area: 1/2/2/3;
 }
 
 .dofamine {
@@ -346,7 +341,7 @@
   .text {
     /*Текст в каждой секции*/
     margin-top: 0px;
-      }
+  }
 }
 
 @media (width <668px) {
@@ -368,9 +363,8 @@
 
   .dofamine {
     grid-area: 3/1/4/3;
-    }
-
- }
+  }
+}
 
 .concentration_grid-container {
   display: grid;
@@ -441,12 +435,12 @@
 @media (width < 668px) {
   /*Секция Что снижает концентрацию внимания*/
   .concentration_grid-container {
-     padding: 0px 10px;
-     margin-top: 27px;
+    padding: 0px 10px;
+    margin-top: 27px;
   }
   .section_title-three {
     max-width: 100%;
-     }
+  }
 }
 
 /*Как концентрироваться лучше, 
@@ -511,11 +505,10 @@
     padding: 0 10px;
     margin-top: 30px;
     column-gap: 0;
-    
   }
   .section_title-four {
     grid-area: 1/1/2/3;
-   }
+  }
 
   .section__title-easy {
     grid-row: span 1;
@@ -596,13 +589,6 @@
   .card__list-item:nth-child(5) {
     grid-area: 5/1/6/2;
   }
-  .maybe_in_the_pictures {
-    margin-top: -24px; /*Если это не так 
-    то объясните мне пожалуйста, как по другому сделать?*/
-  }
-  /*.section_title-five {
-    margin-top: -20px;    
-  } */
 }
 
 article {
@@ -640,11 +626,10 @@ article {
     background-color: var(--color-rec);
     box-shadow: 0px 0px 9px 3px var(--color-rec-after);
   }
-    }
+}
 @media (width < 668px) {
   .section_title-two {
     margin-bottom: 20px;
-
   }
   .section_title-three {
     margin-bottom: 9px;
@@ -652,16 +637,16 @@ article {
   .section_title-four {
     margin-bottom: 20px;
   }
-    .section_title-five {
+  .section_title-five {
     margin-bottom: 10px;
-  } 
+  }
   .article-section {
     margin-bottom: 20px;
   }
   .title_decor-concentration {
-margin:15px 0 0 0px;
+    margin: 15px 0 0 0px;
   }
   .text {
     margin-top: 10px;
   }
- }
+}
