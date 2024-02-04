@@ -4,17 +4,20 @@
 */
 
 :root {
-  --background-image: url('../images/cover-image-dark.png');
-  --bg-color: #FF0070; /*цвет бакграунда*/
-  --text-shadow: #FF0070;
-  --font-family-main:"IBM Plex Mono", sans-serif;
-  --text-color:#000028;
-  --text-color_pink:#FF0070; /*цвет заголовков слева*/
-  --section-title-color:#DB00FF; /*Цвет заголовка Focus*/
-  --title-decor-bg-color:#FF0070; /*задний фон текста*/
-  --title-decor-color:#F1B2CE;
-  --focus-font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --color-link:#F1B2CE; /*цвет ссылки в тексте*/
-  --accent-color:#FF8DCB;
-  --color-hover-dark:#353430;
-  }
+  --background-image: url("../images/cover-image-dark.png");
+  --bacground-color: #000028;
+  --bg-color: #ff0070; /*цвет бакграунда*/
+  --color-rec: #ff0070;
+  --color-rec-after: #ff0070;
+  --text-shadow: #ff0070;
+  --font-family-main: "IBM Plex Mono", sans-serif;
+  --text-color: #000028;
+  --text-color_pink: #ff0070; /*цвет заголовков слева*/
+  --section-title-color: #db00ff; /*Цвет заголовка Focus*/
+  --title-decor-bg-color: #ff0070; /*задний фон текста*/
+  --title-decor-color: #f1b2ce;
+  --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --color-link: #f1b2ce; /*цвет ссылки в тексте*/
+  --accent-color: #ff8dcb;
+  --color-hover-dark: #353430;
+}

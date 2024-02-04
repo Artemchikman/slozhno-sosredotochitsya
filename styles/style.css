@@ -5,6 +5,10 @@
   background-attachment: fixed;
   background-image: var(--background-image);
   font-family: var(--font-family-main);
+  background-repeat: no-repeat;
+  background-color: var(--bacground-color);
+  background-position: center;
+  background-size: cover;
 }
 
 .header {
@@ -97,8 +101,6 @@
     padding: 10px;
     /* изменить расположение блока в правую колонку */
   }
-  .header__theme-menu-item {
-  }
 }
 
 @media (width < 668px) {
@@ -130,7 +132,6 @@
     font-size: var(--focus-font-size);
     color: var(--section-title-color);
     text-shadow: 4px 4px 0px var(--text-shadow);
-    font-weight: 700;
     line-height: 82.5%;
     margin-left: -5px;
     letter-spacing: -1px;
@@ -139,7 +140,7 @@
 
 .rec {
   position: absolute;
-  color: var(--text-color_pink);
+  color: var(--color-rec);
   text-align: center;
   font-family: var(--font-family-main);
   font-size: 18px;
@@ -177,9 +178,19 @@
   width: 9px;
   height: 9px;
   border-radius: 7.5px;
-  background-color: var(--bg-color);
-  box-shadow: 0px 0px 9px 3px var(--title-decor-bg-color);
+  background-color: var(--color-rec);
+  box-shadow: 0px 0px 9px 3px var(--color-rec-after);
   margin-left: 10px;
+}
+
+@media (width < 1024px) {
+  .rec {
+    color: var(--color-rec);
+  }
+  .rec::after {
+    background-color: var(--color-rec);
+    box-shadow: 0px 0px 9px 3px var(--color-rec-after);
+  }
 }
 
 .decorated-zone::before {
@@ -259,17 +270,18 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 23.4px; /* 130% */
 }
+/* @media (width < 668px) {
+.section__title {
+  margin-bottom: 20px;
+} */
+
 
 .link {
   color: var(--title-decor-color);
   text-decoration: none;
   outline: none;
-}
-.link:default {
-  color:var(--color-link);
   text-shadow: 2px 2px 2px var(--text-shadow);
 }
 
@@ -298,9 +310,8 @@
     margin-top: 59px;
   }
 }
-
 .mnogozadach {
-  grid-area: 1/2/2/3;
+  grid-area: 1/2/2/3; /*Убрать*/
 }
 
 .dofamine {
@@ -313,7 +324,7 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: 23.4px; /* 130% */
   margin-top: 10px;
 }
@@ -334,8 +345,8 @@
 
   .text {
     /*Текст в каждой секции*/
-    margin-top: 8px;
-  }
+    margin-top: 0px;
+      }
 }
 
 @media (width <668px) {
@@ -357,17 +368,9 @@
 
   .dofamine {
     grid-area: 3/1/4/3;
-    margin-top: 10px;
-  }
+    }
 
-  .content-section-title {
-    margin: 20px 0 10px 0;
-  }
-
-  .content-section-title_dofamine {
-    margin-top: -10px; 
-  }
-}
+ }
 
 .concentration_grid-container {
   display: grid;
@@ -414,7 +417,7 @@
     font-family: var(--font-family-main);
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+
     line-height: 23.4px; /* 130% */
     max-width: 236px;
     grid-area: 1/1/2/4;
@@ -438,15 +441,12 @@
 @media (width < 668px) {
   /*Секция Что снижает концентрацию внимания*/
   .concentration_grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0px 10px;
-    margin-top: 30px;
+     padding: 0px 10px;
+     margin-top: 27px;
   }
-
   .section_title-three {
     max-width: 100%;
-  }
+     }
 }
 
 /*Как концентрироваться лучше, 
@@ -456,7 +456,6 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 23.4px; /* 130% */
   margin-top: 20px;
 }
@@ -466,7 +465,7 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: 23.4px; /* 130% */
 }
 
@@ -475,7 +474,7 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: 23.4px; /* 130% */
 }
 
@@ -484,7 +483,7 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: 23.4px; /* 130% */
 }
 
@@ -493,7 +492,7 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: 23.4px; /* 130% */
 }
 
@@ -510,13 +509,13 @@
   .advice_grid-container {
     grid-template-columns: 1fr;
     padding: 0 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     column-gap: 0;
+    
   }
   .section_title-four {
     grid-area: 1/1/2/3;
-    margin-top: -22px;
-  }
+   }
 
   .section__title-easy {
     grid-row: span 1;
@@ -564,13 +563,13 @@
 @media (width < 668px) {
   .cards {
     padding: 0 10px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .card__list-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px 0;
+    row-gap: 10px;
     margin-top: 10px;
   }
 
@@ -601,9 +600,9 @@
     margin-top: -24px; /*Если это не так 
     то объясните мне пожалуйста, как по другому сделать?*/
   }
-  .section_title-five {
-    margin-top: -20px;
-  }
+  /*.section_title-five {
+    margin-top: -20px;    
+  } */
 }
 
 article {
@@ -625,13 +624,44 @@ article {
   font-size: var(--focus-font-size);
   color: var(--section-title-color);
   text-shadow: 4px 4px 0px var(--text-shadow);
-  font-weight: 700;
+
   line-height: 82.5%;
 }
 
 @media (width < 668px) {
   .footer {
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 17px;
   }
-}
+  .rec {
+    color: var(--color-rec);
+  }
+  .rec::after {
+    background-color: var(--color-rec);
+    box-shadow: 0px 0px 9px 3px var(--color-rec-after);
+  }
+    }
+@media (width < 668px) {
+  .section_title-two {
+    margin-bottom: 20px;
+
+  }
+  .section_title-three {
+    margin-bottom: 9px;
+  }
+  .section_title-four {
+    margin-bottom: 20px;
+  }
+    .section_title-five {
+    margin-bottom: 10px;
+  } 
+  .article-section {
+    margin-bottom: 20px;
+  }
+  .title_decor-concentration {
+margin:15px 0 0 0px;
+  }
+  .text {
+    margin-top: 10px;
+  }
+ }
