@@ -11,7 +11,7 @@
   */
   --background-image: url("../images/cover-image-light.png");
   --bg-color: #ff8dcb; /*цвет бакграунда*/
-  --text-shadow: #ff0070;
+  --text-shadow: #FF8DCB;
   --text-color: #000028;
   --text-color_pink: #353430; /*цвет заголовков слева*/
   --section-title-color: #ffc2e6; /*Цвет заголовка Focus*/
@@ -29,7 +29,7 @@
   :root {
     --background-image: url("../images/cover-image-light.png");
     --bg-color: #ff8dcb; /*цвет бакграунда*/
-    --text-shadow: #ff0070;
+    --text-shadow: #FF8DCB;
     --text-color: #000028;
     --text-color_pink: #353430; /*цвет заголовков слева*/
     --section-title-color: #ffc2e6; /*Цвет заголовка Focus*/
