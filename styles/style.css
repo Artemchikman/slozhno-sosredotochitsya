@@ -10,7 +10,11 @@
   background-position: center;
   background-size: cover;
 }
-
+/*Исправил как мог, пиксель к пикселю все равно у меня не сходится, чтобы я не делал
+вы наверное вряд ли это прочитаете, но я всеже напишу*/
+/*ТАКЖЕ хочу отметить, что по максимуму убрал повторения переменных, и всяких других
+повторений, оставив те, которые действительно влияют на текст и содержимое
+ЕСЛИ это не поможет, то я незнаю что делать*/
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -128,11 +132,10 @@
   }
 
   .content-section-title__focus {
-    font-size: var(--focus-font-size);
-    text-shadow: 4px 4px 0px var(--text-shadow);
     line-height: 82.5%;
-    margin-left: -5px;
-    letter-spacing: -1px;
+    margin-left: -1px;
+    letter-spacing: -3px;
+    margin-block-end: 3px;
   }
 }
 
@@ -152,9 +155,6 @@
 @media (width< 668px) {
   .rec {
     color: var(--text-color_pink);
-    text-align: center;
-    font-family: var(--font-family-main);
-    font-style: normal;
     right: 20px;
     top: 10px;
   }
@@ -163,7 +163,6 @@
 .rec::before {
   content: " ";
   text-transform: uppercase;
-  color: var(--text-color_pink);
 }
 
 .rec::after {
@@ -176,16 +175,6 @@
   background-color: var(--color-rec);
   box-shadow: 0px 0px 9px 3px var(--color-rec-after);
   margin-left: 10px;
-}
-
-@media (width < 1024px) {
-  .rec {
-    color: var(--color-rec);
-  }
-  .rec::after {
-    background-color: var(--color-rec);
-    box-shadow: 0px 0px 9px 3px var(--color-rec-after);
-  }
 }
 
 .decorated-zone::before {
@@ -300,16 +289,8 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-
   line-height: 23.4px; /* 130% */
   margin-top: 10px;
-}
-
-@media (width < 1024px) {
-  .text {
-    /*Текст в каждой секции*/
-    margin-top: 10px;
-  }
 }
 
 @media (width < 668px) {
@@ -358,7 +339,6 @@
 @media (width < 1024px) {
   .concentration_grid-container {
     grid-template-columns: 1fr;
-    padding: 0px 20px;
     margin-top: 60px;
   }
 }
@@ -392,7 +372,6 @@
     font-family: var(--font-family-main);
     font-size: 18px;
     font-style: normal;
-
     line-height: 23.4px; /* 130% */
     max-width: 236px;
     grid-area: 1/1/2/4;
@@ -440,7 +419,6 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-
   line-height: 23.4px; /* 130% */
 }
 
@@ -449,7 +427,6 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-
   line-height: 23.4px; /* 130% */
 }
 
@@ -458,7 +435,6 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-
   line-height: 23.4px; /* 130% */
 }
 
@@ -467,7 +443,6 @@
   font-family: var(--font-family-main);
   font-size: 18px;
   font-style: normal;
-
   line-height: 23.4px; /* 130% */
 }
 
@@ -547,15 +522,9 @@
   }
 
   .card__list-grid {
-    display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
     margin-top: 10px;
-  }
-
-  .card__list-item img {
-    inline-size: 100%;
-    block-size: 100%;
   }
 
   .card__list-item:nth-child(1) {
@@ -597,7 +566,6 @@ article {
   font-size: var(--focus-font-size);
   color: var(--section-title-color);
   text-shadow: 4px 4px 0px var(--text-shadow);
-
   line-height: 82.5%;
 }
 
@@ -606,14 +574,8 @@ article {
     padding: 10px;
     margin-top: 40px;
   }
-  .rec {
-    color: var(--color-rec);
-  }
-  .rec::after {
-    background-color: var(--color-rec);
-    box-shadow: 0px 0px 9px 3px var(--color-rec-after);
-  }
 }
+
 @media (width < 668px) {
   .section_title-two {
     margin-bottom: 20px;
@@ -635,6 +597,9 @@ article {
   }
   .text {
     margin-top: 10px;
+  }
+  .footer_content-section-title {
+    font-size: var(--nofocus-font-size);
   }
 }
 

@@ -17,6 +17,7 @@
   --title-decor-bg-color: #ff0070; /*задний фон текста*/
   --title-decor-color: #f1b2ce;
   --focus-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --nofocus-font-size:clamp(7.3rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --color-link: #f1b2ce; /*цвет ссылки в тексте*/
   --accent-color: #ff8dcb;
   --color-hover-dark: #353430;
